@@ -7,6 +7,13 @@
     <string name="filter">Filter</string>
     <string name="all">All</string>
     <string name="curiosity_view_holder">Curiosity View Holder</string>
+    <string name="vehicle_name">Vehicle: %s</string>
+    <string name="photo_date">Photo Date: %s</string>
+    <string name="camera_type">Camera: %s</string>
+    <string name="vehicle_status">Status: %s</string>
+    <string name="launch_date">Launch Date: %s</string>
+    <string name="landing_date">Landing Date: %s</string>
+    <string name="photo_info_content">Photo Info</string>
 
     <string-array name="curiosityFilterOptions">
         <item>FHAZ</item>
@@ -33,7 +40,6 @@
         <item>PANCAM</item>
         <item>MINITES</item>
     </string-array>
-
 
 
 </resources>
