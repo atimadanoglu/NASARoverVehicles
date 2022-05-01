@@ -4,4 +4,36 @@
     <string name="opportunity_tab">Opportunity</string>
     <string name="spirit_tab">Spirit</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filter">Filter</string>
+    <string name="all">All</string>
+    <string name="curiosity_view_holder">Curiosity View Holder</string>
+
+    <string-array name="curiosityFilterOptions">
+        <item>FHAZ</item>
+        <item>RHAZ</item>
+        <item>MAST</item>
+        <item>CHEMCAM</item>
+        <item>MAHLI</item>
+        <item>MARDI</item>
+        <item>NAVCAM</item>
+    </string-array>
+
+    <string-array name="opportunityFilterOptions">
+        <item>FHAZ</item>
+        <item>RHAZ</item>
+        <item>NAVCAM</item>
+        <item>PANCAM</item>
+        <item>MINITES</item>
+    </string-array>
+
+    <string-array name="spiritFilterOptions">
+        <item>FHAZ</item>
+        <item>RHAZ</item>
+        <item>NAVCAM</item>
+        <item>PANCAM</item>
+        <item>MINITES</item>
+    </string-array>
+
+
+
 </resources>
