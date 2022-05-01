@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vehicled_nav_graph"
+    app:startDestination="@id/curiosityPhotosFragment">
+
+    <fragment
+        android:id="@+id/curiosityPhotosFragment"
+        android:name="com.atakanmadanoglu.nasa_rover_vehicles.view.CuriosityPhotosFragment"
+        android:label="fragment_curiosity_photos"
+        tools:layout="@layout/fragment_curiosity_photos" />
+    <fragment
+        android:id="@+id/opportunityPhotosFragment"
+        android:name="com.atakanmadanoglu.nasa_rover_vehicles.view.OpportunityPhotosFragment"
+        android:label="fragment_opportunity_photos"
+        tools:layout="@layout/fragment_opportunity_photos" />
+    <fragment
+        android:id="@+id/spiritPhotosFragment"
+        android:name="com.atakanmadanoglu.nasa_rover_vehicles.view.SpiritPhotosFragment"
+        android:label="fragment_spirit_photos"
+        tools:layout="@layout/fragment_spirit_photos" />
+</navigation>

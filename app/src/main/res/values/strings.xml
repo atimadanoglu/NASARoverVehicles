@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NASA-Rover-Vehicles</string>
+    <string name="curiosity_tab">Curiosity</string>
+    <string name="opportunity_tab">Opportunity</string>
+    <string name="spirit_tab">Spirit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
