@@ -15,31 +15,20 @@
     <string name="landing_date">Landing Date: %s</string>
     <string name="photo_info_content">Photo Info</string>
 
-    <string-array name="curiosityFilterOptions">
-        <item>FHAZ</item>
-        <item>RHAZ</item>
-        <item>MAST</item>
-        <item>CHEMCAM</item>
-        <item>MAHLI</item>
-        <item>MARDI</item>
-        <item>NAVCAM</item>
+    <string-array name="tabNames">
+        <item>Curiosity</item>
+        <item>Opportunity</item>
+        <item>Spirit</item>
     </string-array>
 
-    <string-array name="opportunityFilterOptions">
-        <item>FHAZ</item>
-        <item>RHAZ</item>
-        <item>NAVCAM</item>
-        <item>PANCAM</item>
-        <item>MINITES</item>
-    </string-array>
-
-    <string-array name="spiritFilterOptions">
-        <item>FHAZ</item>
-        <item>RHAZ</item>
-        <item>NAVCAM</item>
-        <item>PANCAM</item>
-        <item>MINITES</item>
-    </string-array>
-
+    <string name="FHAZ">FHAZ</string>
+    <string name="RHAZ">RHAZ</string>
+    <string name="MAST">MAST</string>
+    <string name="CHEMCAM">CHEMCAM</string>
+    <string name="MAHLI">MAHLI</string>
+    <string name="MARDI">MARDI</string>
+    <string name="NAVCAM">NAVCAM</string>
+    <string name="PANCAM">PANCAM</string>
+    <string name="MINITES">MINITES</string>
 
 </resources>
