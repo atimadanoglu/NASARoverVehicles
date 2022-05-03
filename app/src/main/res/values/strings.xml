@@ -31,31 +31,4 @@
     <string name="PANCAM">PANCAM</string>
     <string name="MINITES">MINITES</string>
 
-    <string-array name="curiosityFilterOptions">
-        <item>FHAZ</item>
-        <item>RHAZ</item>
-        <item>MAST</item>
-        <item>CHEMCAM</item>
-        <item>MAHLI</item>
-        <item>MARDI</item>
-        <item>NAVCAM</item>
-    </string-array>
-
-    <string-array name="opportunityFilterOptions">
-        <item>FHAZ</item>
-        <item>RHAZ</item>
-        <item>NAVCAM</item>
-        <item>PANCAM</item>
-        <item>MINITES</item>
-    </string-array>
-
-    <string-array name="spiritFilterOptions">
-        <item>FHAZ</item>
-        <item>RHAZ</item>
-        <item>NAVCAM</item>
-        <item>PANCAM</item>
-        <item>MINITES</item>
-    </string-array>
-
-
 </resources>
