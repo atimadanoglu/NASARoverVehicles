@@ -68,4 +68,6 @@ dependencies {
 
     implementation "io.reactivex.rxjava3:rxjava:$rxJavaVersion"
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
 }

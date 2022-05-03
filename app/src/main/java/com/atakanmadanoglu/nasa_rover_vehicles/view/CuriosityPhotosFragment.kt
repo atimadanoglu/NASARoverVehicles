@@ -1,12 +1,10 @@
 package com.atakanmadanoglu.nasa_rover_vehicles.view
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import com.atakanmadanoglu.nasa_rover_vehicles.R
+import androidx.fragment.app.Fragment
 import com.atakanmadanoglu.nasa_rover_vehicles.databinding.FragmentCuriosityPhotosBinding
 
 class CuriosityPhotosFragment : Fragment() {
@@ -20,15 +18,7 @@ class CuriosityPhotosFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentCuriosityPhotosBinding.inflate(inflater, container, false)
-
         return binding.root
-    }
-
-    override fun onResume() {
-        super.onResume()
-        val filterOptions = resources.getStringArray(R.array.curiosityFilterOptions)
-        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_item, filterOptions)
-        binding.autoCompleteTextView.setAdapter(arrayAdapter)
     }
 
 }
