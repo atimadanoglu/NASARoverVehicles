@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.atakanmadanoglu.nasa_rover_vehicles.R
 import com.atakanmadanoglu.nasa_rover_vehicles.databinding.ActivityMainBinding
-import com.atakanmadanoglu.nasa_rover_vehicles.view.adapter.ViewPagerAdapter
+import com.atakanmadanoglu.nasa_rover_vehicles.adapter.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
