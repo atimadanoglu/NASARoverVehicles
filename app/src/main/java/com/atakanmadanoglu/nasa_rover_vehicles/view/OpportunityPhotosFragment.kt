@@ -21,7 +21,7 @@ class OpportunityPhotosFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentOpportunityPhotosBinding.inflate(inflater, container, false)
-        adapter = OpportunityPhotosAdapter(requireContext())
+        adapter = OpportunityPhotosAdapter(parentFragmentManager, requireContext())
         binding.recyclerView.adapter = adapter
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner

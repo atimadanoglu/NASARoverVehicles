@@ -3,17 +3,20 @@ package com.atakanmadanoglu.nasa_rover_vehicles.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.atakanmadanoglu.nasa_rover_vehicles.databinding.CuriosityViewHolderBinding
 import com.atakanmadanoglu.nasa_rover_vehicles.model.Photo
+import com.atakanmadanoglu.nasa_rover_vehicles.view.PhotoInfoFragment
 import com.bumptech.glide.Glide
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class OpportunityPhotosAdapter(
+    private val fragmentManager: FragmentManager,
     private val context: Context
 ): ListAdapter<Photo, OpportunityPhotosAdapter.ViewHolder>(OpportunityDiffUtil()) {
     class ViewHolder(private val binding: CuriosityViewHolderBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -24,9 +27,13 @@ class OpportunityPhotosAdapter(
                 return ViewHolder(binding)
             }
         }
-        fun bind(photo: Photo, context: Context) {
+        fun bind(photo: Photo, context: Context, fragmentManager: FragmentManager) {
             CoroutineScope(Dispatchers.Main).launch {
                 Glide.with(context).load(photo.img_src).into(binding.imageView)
+            }
+            binding.root.setOnClickListener {
+                val dialog = PhotoInfoFragment(photo)
+                dialog.show(fragmentManager, "opportunityDialog")
             }
         }
     }
@@ -37,7 +44,7 @@ class OpportunityPhotosAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = getItem(position)
-        holder.bind(item, context)
+        holder.bind(item, context, fragmentManager)
     }
 }
 

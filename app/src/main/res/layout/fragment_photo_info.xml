@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="photo"
+            type="com.atakanmadanoglu.nasa_rover_vehicles.model.Photo" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +29,7 @@
             android:id="@+id/vehicle_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vehicle_name"
+            android:text="@{@string/vehicle_name(photo.rover.name)}"
             android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="40dp"
@@ -38,7 +40,7 @@
             android:id="@+id/photo_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/photo_date"
+            android:text="@{@string/photo_date(photo.earth_date)}"
             android:textSize="20sp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="30dp"
@@ -49,7 +51,7 @@
             android:id="@+id/camera_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/camera_type"
+            android:text="@{@string/camera_type(photo.camera.name)}"
             android:textSize="20sp"
             android:layout_marginTop="30dp"
             android:layout_marginStart="40dp"
@@ -60,7 +62,7 @@
             android:id="@+id/vehicle_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vehicle_status"
+            android:text="@{@string/vehicle_status(photo.rover.status)}"
             android:textSize="20sp"
             android:layout_marginTop="30dp"
             android:layout_marginStart="40dp"
@@ -71,7 +73,7 @@
             android:id="@+id/launch_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/launch_date"
+            android:text="@{@string/launch_date(photo.rover.launch_date)}"
             android:textSize="20sp"
             android:layout_marginTop="30dp"
             android:layout_marginStart="40dp"
@@ -82,7 +84,7 @@
             android:id="@+id/landing_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/landing_date"
+            android:text="@{@string/landing_date(photo.rover.landing_date)}"
             android:textSize="20sp"
             android:layout_marginTop="30dp"
             android:layout_marginStart="40dp"
