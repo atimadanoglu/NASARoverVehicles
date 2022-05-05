@@ -22,7 +22,7 @@ class CuriosityPhotosFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentCuriosityPhotosBinding.inflate(inflater, container, false)
-        adapter = CuriosityPhotosAdapter(requireContext())
+        adapter = CuriosityPhotosAdapter(parentFragmentManager, requireContext())
         binding.recyclerView.adapter = adapter
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner

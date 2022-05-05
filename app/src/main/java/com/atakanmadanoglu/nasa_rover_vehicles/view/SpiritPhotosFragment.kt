@@ -22,7 +22,7 @@ class SpiritPhotosFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentSpiritPhotosBinding.inflate(inflater, container, false)
-        adapter = SpiritPhotosAdapter(requireContext())
+        adapter = SpiritPhotosAdapter(parentFragmentManager, requireContext())
         binding.recyclerView.adapter = adapter
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
