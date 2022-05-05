@@ -24,6 +24,8 @@ class SpiritPhotosFragment : Fragment() {
         _binding = FragmentSpiritPhotosBinding.inflate(inflater, container, false)
         adapter = SpiritPhotosAdapter(requireContext())
         binding.recyclerView.adapter = adapter
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
         viewModel.photos.observe(viewLifecycleOwner) {
             adapter.submitList(it.photos)
         }
