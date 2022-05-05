@@ -24,6 +24,8 @@ class CuriosityPhotosFragment : Fragment() {
         _binding = FragmentCuriosityPhotosBinding.inflate(inflater, container, false)
         adapter = CuriosityPhotosAdapter(requireContext())
         binding.recyclerView.adapter = adapter
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
         viewModel.photos.observe(viewLifecycleOwner) {
             adapter.submitList(it.photos)
         }
