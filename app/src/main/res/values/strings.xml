@@ -14,7 +14,7 @@
     <string name="launch_date">Launch Date: %s</string>
     <string name="landing_date">Landing Date: %s</string>
     <string name="photo_info_content">Photo Info</string>
-
+    <string name="okay">Okay</string>
     <string-array name="tabNames">
         <item>Curiosity</item>
         <item>Opportunity</item>
