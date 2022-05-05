@@ -6,79 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".view.CuriosityPhotosFragment">
 
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/fhaz"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        app:singleSelection="true"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/FHAZ"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/fhaz"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FHAZ" />
+    <Button
+        android:id="@+id/rhaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RHAZ"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/fhaz"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/rhaz"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/RHAZ" />
+    <Button
+        android:id="@+id/mast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MAST"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/rhaz"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/mast"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/MAST" />
+    <Button
+        android:id="@+id/chemcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CHEMCAM"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/mast"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chemcam"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/CHEMCAM" />
+    <Button
+        android:id="@+id/mahli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/MAHLI"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/navcam"
+        app:layout_constraintTop_toBottomOf="@+id/mast" />
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/mahli"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/MAHLI" />
+    <Button
+        android:id="@+id/mardi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/MARDI"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fhaz" />
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/mardi"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/MARDI" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/navcam"
-            style="@style/Widget.MaterialComponents.Chip.Choice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/NAVCAM" />
-    </com.google.android.material.chip.ChipGroup>
+    <Button
+        android:id="@+id/navcam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/NAVCAM"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/mardi"
+        app:layout_constraintTop_toBottomOf="@+id/rhaz" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        android:layout_marginTop="120dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:spanCount="@integer/grid_columns"
         tools:listitem="@layout/curiosity_view_holder" />
 
 
