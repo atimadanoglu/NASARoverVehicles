@@ -36,10 +36,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/chemcam"
+        android:id="@+id/pancam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/CHEMCAM"
+        android:text="@string/PANCAM"
         android:layout_marginLeft="5dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/minites"
