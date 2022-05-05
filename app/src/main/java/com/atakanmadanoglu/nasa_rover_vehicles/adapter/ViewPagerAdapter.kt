@@ -1,4 +1,4 @@
-package com.atakanmadanoglu.nasa_rover_vehicles.view.adapter
+package com.atakanmadanoglu.nasa_rover_vehicles.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
