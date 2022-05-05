@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface NASAMarsAPI {
 
-    @GET("/mars-photos/api/v1/rovers/curiosity/")
+    @GET("/mars-photos/api/v1/rovers/curiosity/photos?")
     suspend fun getCuriosityPhotos(
         @Query("page")
         page: Int = 1,
@@ -16,7 +16,7 @@ interface NASAMarsAPI {
         sol: Int = 1000,
         @Query("api_key")
         api_key: String = "DEMO_KEY"
-    ): Single<PhotosResponse>
+    ): Response<PhotosResponse>
 
     @GET("/mars-photos/api/v1/rovers/opportunity/")
     suspend fun getOpportunityPhotos(
@@ -26,7 +26,7 @@ interface NASAMarsAPI {
         sol: Int = 1000,
         @Query("api_key")
         api_key: String = "DEMO_KEY"
-    ): Single<PhotosResponse>
+    ): Response<PhotosResponse>
 
     @GET("/mars-photos/api/v1/rovers/spirit/")
     suspend fun getSpiritPhotos(
@@ -36,7 +36,7 @@ interface NASAMarsAPI {
         sol: Int = 1000,
         @Query("api_key")
         api_key: String = "DEMO_KEY"
-    ): Single<PhotosResponse>
+    ): Response<PhotosResponse>
 
     @GET("/mars-photos/api/v1/rovers/spirit/")
     suspend fun getSpecificCameraPhotosForSpirit(
@@ -48,7 +48,7 @@ interface NASAMarsAPI {
         camera: String,
         @Query("api_key")
         api_key: String = "DEMO_KEY"
-    ): Single<PhotosResponse>
+    ): Response<PhotosResponse>
 
     @GET("/mars-photos/api/v1/rovers/spirit/")
     suspend fun getSpecificCameraPhotosForCuriosity(
@@ -60,7 +60,7 @@ interface NASAMarsAPI {
         camera: String,
         @Query("api_key")
         api_key: String = "DEMO_KEY"
-    ): Single<PhotosResponse>
+    ): Response<PhotosResponse>
 
     @GET("/mars-photos/api/v1/rovers/spirit/")
     suspend fun getSpecificCameraPhotosForOpportunity(
@@ -72,6 +72,6 @@ interface NASAMarsAPI {
         camera: String,
         @Query("api_key")
         api_key: String = "DEMO_KEY"
-    ): Single<PhotosResponse>
+    ): Response<PhotosResponse>
 
 }
