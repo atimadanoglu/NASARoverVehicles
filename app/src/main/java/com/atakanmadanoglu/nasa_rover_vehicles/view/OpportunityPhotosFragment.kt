@@ -23,6 +23,8 @@ class OpportunityPhotosFragment : Fragment() {
         _binding = FragmentOpportunityPhotosBinding.inflate(inflater, container, false)
         adapter = OpportunityPhotosAdapter(requireContext())
         binding.recyclerView.adapter = adapter
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
         viewModel.photos.observe(viewLifecycleOwner) {
             adapter.submitList(it.photos)
         }
