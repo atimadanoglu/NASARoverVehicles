@@ -14,7 +14,7 @@
   * <a href="https://developer.android.com/guide/topics/ui/layout/recyclerview">RecyclerView</a> - Efficiently displays large sets of data
 * <a href="https://github.com/square/retrofit">Retrofit</a> - A type-safe HTTP client for Android and Java
 * <a href="https://material.io/develop/android">Material Design Components</a>
-* * <a href="https://developer.android.com/training/animation/screen-slide-2">ViewPager2</a> - Makes transitions between one entire screen to another 
+* <a href="https://developer.android.com/training/animation/screen-slide-2">ViewPager2</a> - Makes transitions between one entire screen to another 
 * <a href="https://github.com/bumptech/glide">Glide</a> - Media management and image loading framework
 
 # Architecture
